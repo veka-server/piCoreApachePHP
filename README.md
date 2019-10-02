@@ -5,9 +5,18 @@ une image de tinyCore pour raspberry pi avec Apache 2.4 et PHP 7
 # CONFIG
 
 ```
-/usr/local/etc/httpd
+/usr/local/etc/httpd/httpd.conf
 ```
+ADD
+```
+LoadModule php7_module modules/libphp7.so
 
+<FilesMatch \.php$>
+    Sethandler application/x-httpd-php
+</FilesMatch>
+
+DirectoryIndex index.php
+```
 
 # SOURCES
 
