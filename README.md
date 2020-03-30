@@ -29,9 +29,27 @@ piCore_fdisk
 
 6 After the system boots up, expand the ‘/dev/mmcblk0p2‘ partition using the “sudo resize2fs /dev/mmcblk0p2” command –
 
-```sudo resize2fs /dev/mmcblk0p2```
+```
+sudo resize2fs /dev/mmcblk0p2
+```
 
+# search paquet
+``` 
+tce-ab
+```
+# Télécharger depuis les serveurs et installer le logiciel (option -w):
+``` 
+tce-load -w -i nom_du_paquet.tcz
+```
+# Télécharger et installer la liste des mirroirs réseaux:
+```
+tce-load -w -i mirrors.tcz
+```
 
+# Mise à jour:
+```
+tce-update
+```
 
 # SAVE
 ```
