@@ -51,6 +51,11 @@ tce-load -w -i mirrors.tcz
 tce-update
 ```
 
+# install apache 2.4 et PHP 7.1
+```
+tce-load -w -i apache2.4-mod-php7.1
+```
+
 # SAVE
 ```
 filetool.sh -b
