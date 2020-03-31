@@ -57,6 +57,22 @@ tce-load -w -i apache2.4
 tce-load -w -i apache2.4-mod-php7.1
 ```
 
+# DEFINE DATE
+
+I spent days fiddling with this also.
+
+Here's what I do.
+
+1. Get timezone string from here: http://wiki.openwrt.org/doc/uci/system#time.zones
+2. Set $TIMEZONE equal to tz string
+3. echo "TZ="$TIMEZONE > /etc/sysconfig/timezone
+4. echo "etc/sysconfig/timezone" >> /opt/.filetool.lst
+5. backup or sudo filetool.sh -b
+6. reboot
+
+Seems to works well for Sydney TZ=EST-10EST,M10.1.0,M4.1.0/3.
+
+
 # SAVE
 ```
 filetool.sh -b
