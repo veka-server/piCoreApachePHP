@@ -70,7 +70,7 @@ Here's what I do.
 5. backup or sudo filetool.sh -b
 6. reboot
 
-Seems to works well for Sydney TZ=EST-10EST,M10.1.0,M4.1.0/3.
+Seems to works well for Paris TZ=CET-1CEST,M3.5.0,M10.5.0/3
 
 
 # SAVE
